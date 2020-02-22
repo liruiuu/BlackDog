@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true" 
+
+     >
+    
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="23sp" 
+        android:gravity="center" 
+        android:textColor="#ffff00ff" 
+        android:text="聊天中......"
+        />
+
+      <Button
+          android:id="@+id/sentButton"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/sentText"
+          android:text="发    送" />
+
+      <EditText
+          android:id="@+id/sentText"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_toLeftOf="@+id/sentButton"
+          android:ems="10"
+          android:background="#ccffff"
+          android:textSize="20sp" />
+
+  <!--  <TextView
+          android:id="@+id/recievText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/sentButton"
+          android:layout_alignParentLeft="true"
+          android:gravity="start"
+          android:text=" "
+          android:textSize="25sp" />-->
+
+       <ListView
+           android:id="@+id/listView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/sentText"
+           android:layout_alignParentLeft="true"
+           android:stackFromBottom="true"
+           android:transcriptMode="alwaysScroll"
+           android:layout_below="@+id/outputText" >
+          
+       </ListView>
+
+</RelativeLayout>

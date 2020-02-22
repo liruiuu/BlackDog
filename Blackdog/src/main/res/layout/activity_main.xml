@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/remoteipwbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="服务器IP"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/remoteipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/remoteipwbText"
+        android:layout_toRightOf="@+id/remoteipwbText"
+        android:text="192.168.31.15"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/idwbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/remoteipwbText"
+        android:layout_below="@+id/remoteipText"
+        android:gravity="center"
+        android:text="账   号   "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idwbText"
+        android:layout_below="@+id/remoteipText"
+        android:layout_toRightOf="@+id/remoteipwbText"
+        android:text="1111"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/namewbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idwbText"
+        android:layout_below="@+id/idText"
+        android:gravity="center"
+        android:text="名   字"
+        android:textSize="18sp" />
+     <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/namewbText"
+        android:layout_below="@+id/remoteipText"
+        android:layout_toRightOf="@+id/remoteipwbText"
+        android:text="1111"
+        android:textSize="20sp" />
+        <TextView
+          android:id="@+id/passwordwbText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/namewbText"
+          android:layout_below="@+id/namewbText"
+          android:layout_marginTop="14dp"
+          android:text="密   码   "
+          android:textSize="18sp" />
+
+   <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordwbText"
+        android:layout_alignBottom="@+id/passwordwbText"
+        android:layout_toRightOf="@+id/remoteipwbText"
+        android:password="true"
+        android:text="123456"
+        android:textSize="20sp" >
+    </EditText>
+
+     <Button
+        android:id="@+id/setipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/passwordText"
+        android:layout_below="@+id/passwordText"
+        android:layout_marginTop="15dp"
+        android:text="设置服务器IP" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setipButton"
+        android:text="账 号 注 册" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerButton"
+        android:text="账 号 注 销" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteButton"
+        android:text="联 网 登 录" />
+
+    <Button
+        android:id="@+id/floginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:text="离 线 登 录" />
+
+    <Button
+        android:id="@+id/sentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/floginButton"
+        android:visibility="gone"
+        android:text="公 网 聊 天" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sentButton"
+        android:gravity="center"
+        android:text="Divano Messia"
+        android:textColor="#ffff0000"
+        android:textSize="25sp" />
+
+</RelativeLayout>
